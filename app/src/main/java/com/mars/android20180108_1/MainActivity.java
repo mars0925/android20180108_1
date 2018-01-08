@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
                 MainActivity.this, android.R.layout.simple_list_item_1, str);
-        act.setThreshold(1);//設定幾個字相同 1代表1個字相同
+        act.setThreshold(1);//設定幾個字相同就跳出提示, 1代表1個字相同
         act.setAdapter(adapter);//放入adapter
     }
 
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
       System.out.println(m1.get("name"));
 
       HashMap m2 = new HashMap();
-      m2.put("name","Marry");
+      m2.put("name","Marry");//put關鍵字放入內容
       m2.put("chi", 95);
       System.out.println(m2.get("name"));
 
