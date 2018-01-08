@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this, android.R.layout.simple_list_item_1, str);
         act.setThreshold(1);//設定幾個字相同就跳出提示, 1代表1個字相同
         act.setAdapter(adapter);//放入adapter
+        //結束
     }
 
 }
